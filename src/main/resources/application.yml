@@ -1,0 +1,27 @@
+server:
+  port: 9091
+logging:
+  level:
+    root: error
+    '[org.springframework]': info
+    '[org.hibernate]': error
+spring:
+  datasource:
+    username: jrtp
+    password: Jrtp21@1234
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/njhis
+    
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+    properties:
+      dialect: org.hibernate.dialect.MySQLDialect
+     
+ar-api:
+  message:
+    success_message: Application created successfully
+    failed_message: Wrong SSN number
+  
+      
